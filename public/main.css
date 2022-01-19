@@ -1,0 +1,148 @@
+
+body{background-color: rgb(0, 244, 139);}
+.product{
+    background-color: white;
+    width: min(max(55vw, 80vw), 80vw);
+    height: 82vh;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 5px
+}
+
+.product__photo{
+position: relative;
+right: 30px;
+}
+
+.photo-container{
+    border-radius: 5px;
+    margin-top: 10%;
+    background-color: yellowgreen;    
+    box-shadow: 0 11px 10px rgb(0 0 0 / 0.2);
+}
+
+.photo-main{
+    position: relative;
+    right: 55px; 
+    padding-bottom: 10%; 
+}
+ .photo-main img{
+    width: 85%;
+ }
+
+.controls{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.photo-album ul{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-right: 10%;
+}
+ 
+.photo-album ul li {
+    border: solid rgba(93, 93, 93, 0.313) .5px;
+    list-style: none;
+}
+
+.photo-album ul li img{
+    width: 80%;
+}
+
+.product__info{}
+
+.title{padding-bottom: 2.5vh; margin-top: 10vh;}
+
+.title h1{
+    color: rgb(79, 79, 79);
+    font-family:sans-serif;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.title span{
+    color: rgba(152, 151, 151, 0.878);
+    font-size: x-small;
+    font-weight: 600;
+}
+
+.price{
+ color: #ff3333e7;
+ 
+}
+.price span{font-size: 3rem;
+    vertical-align: -6px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.variant{
+    padding-top: 10px;
+}
+
+.variant ul{
+display: flex;
+flex-direction: row;
+gap: 2px;
+list-style: none;
+}
+
+.variant ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    list-style: none;
+    }
+
+.variant ul{text-align: center; padding-left: 0;}
+.variant ul li{width: 18%;}
+.variant ul li img{
+    width: 60%;
+    padding-right: 0px;
+    
+}    
+
+.variant ul li:nth-child(1){
+    border: solid rgba(93, 93, 93, 0.313) .5px;
+}
+
+.description{
+    margin-top: 25px;;
+}
+
+.description h3, .variant h3{
+    color: gray;
+    font-size: 11px;
+}
+
+.description ul li{ font-size:  min(max(15px, 15px), 17px);
+padding-top: 4%;}
+
+.buy--btn{
+    background-color: #ff3333ef;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    height: 2.75rem;;
+    width:23vw;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:1000px){
+.product{
+    width: 60vw;
+    }
+}
